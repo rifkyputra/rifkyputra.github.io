@@ -9,6 +9,7 @@ import Link from "../node_modules/next/link";
 import Date from '../components/date';
 
 
+const prefix = process.env.NEXT_PUBLIC_BASE_PATH || '';
 
 
 function Blog({ allPostsData }) {
@@ -23,7 +24,7 @@ function Blog({ allPostsData }) {
         <ul className={utilStyles.list}>
           {allPostsData.map(({ id, date, title }) => (
             <li className={utilStyles.listItem} key={id}>
-              <Link href={`/posts/${id}`}>
+              <Link href={prefix+`/posts/${id}`}>
                 <a>{title}</a>
               </Link>
               <br />

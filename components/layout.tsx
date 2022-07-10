@@ -1,18 +1,21 @@
-import Head from 'next/head'
-import Image from 'next/image'
+
 import styles from './layout.module.css'
 import utilStyles from '../styles/utils.module.css'
-import Link from 'next/link'
+import Head from '../node_modules/next/head';
+import Link from '../node_modules/next/link';
+import Image from '../node_modules/next/image';
+
 
 const name = 'Rifky Adni Putra'
 export const siteTitle = 'Software Developer'
 export const siteDescription = "My name is Rifky Adni Putra. I'm a Software Engineer, specialized in Flutter, Unity, DotNet and Unreal Engine. You can find more about me in this page";
+const prefix = process.env.NEXT_PUBLIC_BASE_PATH || '';
 
-export default function Layout({ children, home }) {
+export default function Layout({ children, home}) {
   return (
     <div className={styles.container}>
       <Head>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href={prefix+`/favicon.ico`} />
         <meta
           name="description"
           content="My name is Rifky Adni Putra. I'm a Software Engineer, specialized in Flutter, Unity, DotNet and Unreal Engine."
@@ -45,7 +48,7 @@ export default function Layout({ children, home }) {
               <a>
                 <Image
                   priority
-                  src="/images/profile.jpg"
+                  src={prefix +`/images/profile.jpg`}
                   className={utilStyles.borderCircle}
                   height={108}
                   width={108}
