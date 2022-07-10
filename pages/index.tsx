@@ -15,17 +15,22 @@ export default function Home({ allPostsData }) {
       </section>
       <section className={`${utilStyles.flexContainer}`}>
         <Link href={`/experience`}>
-          <h2 className={` ${utilStyles.flexItem}`}><a>01. Experience</a></h2>
+        <a><h2 className={` ${utilStyles.flexItem}`}>01. Experience</h2></a>
         </Link>
-        <span className={`${utilStyles.dividerSpan} ${utilStyles.flexItem}`}>//</span>
+        <div className={`${utilStyles.dividerBtm}`}>&nbsp;</div>
+        <span className={`${utilStyles.dividerSpan} `}>//</span>
         <Link href={`/portfolio`}>
           <a><h2 className={` ${utilStyles.flexItem}`}>02. Portfolio</h2></a>
         </Link>
-        <span className={`${utilStyles.dividerSpan} ${utilStyles.flexItem}`}>//</span>
+        <div className={`${utilStyles.dividerBtm}`}>&nbsp;</div>
+
+        <span className={`${utilStyles.dividerSpan} `}>//</span>
         <Link href={`/blog`}>
           <a><h2 className={`${utilStyles.flexItem}`}>03. Blog</h2></a>
         </Link>
-        <span className={`${utilStyles.dividerSpan} ${utilStyles.flexItem}`}>//</span>
+        <div className={`${utilStyles.dividerBtm}`}>&nbsp;</div>
+
+        <span className={`${utilStyles.dividerSpan} `}>//</span>
         <Link href={`/contact`}>
           <a><h2 className={`${utilStyles.flexItem}`}>04. Contact</h2></a>
         </Link>

@@ -41,11 +41,7 @@
   padding-top: 10px;
 }
 
-.dividerSpan {
-  margin-right: 5px;
-  font-size: 24px;
 
-}
 
 .list {
   list-style: none;
@@ -64,13 +60,56 @@
 .flexContainer {
   display: flex;
   align-items: center;
+  flex-direction: column;
 }
 
 .flexItem {
   flex-grow: 1;
   height: 100px;
+  
 }
 
 .item + .item {
   margin-left: 2%;
+}
+
+
+
+.dividerSpan {
+  margin-right: 0px;
+  font-size: 0px;
+  visibility: hidden;
+  height: 0;
+}
+
+.dividerBtm {
+  border-bottom: 1px solid black;
+  width: 2rem;
+  height: 5px;
+  display: inline-block;
+}
+
+@media screen and (min-width:650px){
+  .flexContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+
+
+  .dividerSpan {
+    font-size: 24px;
+    visibility: visible;
+    margin-left: 40px;
+    margin-right: 40px;
+    height: auto;
+  }
+
+  .dividerBtm {
+    visibility: hidden;
+  }
+
+
+
+  
 }
