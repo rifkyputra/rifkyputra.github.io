@@ -11,7 +11,12 @@ export const siteTitle = 'Software Developer'
 export const siteDescription = "My name is Rifky Adni Putra. I'm a Software Engineer, specialized in Flutter, Unity, DotNet and Unreal Engine. You can find more about me in this page";
 const prefix = process.env.NEXT_PUBLIC_BASE_PATH || '';
 
-export default function Layout({ children, home}) {
+interface LayoutParam {
+  children: any,
+  home: boolean,
+}
+
+export default function Layout(param : LayoutParam) {
   return (
     <div className={styles.container}>
       <Head>
@@ -30,7 +35,7 @@ export default function Layout({ children, home}) {
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <header className={styles.header}>
-        {home ? (
+        {param.home ? (
           <>
             <Image
               priority
@@ -64,8 +69,8 @@ export default function Layout({ children, home}) {
           </>
         )}
       </header>
-      <main>{children}</main>
-      {!home && (
+      <main>{param.children}</main>
+      {!param.home && (
         <div className={styles.backToHome}>
           <Link href="/">
             <a>← Back to home</a>

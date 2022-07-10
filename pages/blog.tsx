@@ -1,4 +1,3 @@
-import { AppProps } from "../node_modules/next/app";
 import { getSortedPostsData } from "../lib/posts";
 
 
@@ -13,7 +12,7 @@ const prefix = process.env.NEXT_PUBLIC_BASE_PATH || '';
 
 
 function Blog({ allPostsData }) {
-    return (<Layout home>
+    return (<Layout home={false}>
         <Head>
         <title>Blog</title>
       </Head>

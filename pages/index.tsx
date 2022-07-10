@@ -1,7 +1,7 @@
-import Head from 'next/head'
 import Layout, { siteDescription, siteTitle } from '../components/layout'
+import Head  from '../node_modules/next/head'
+import Link from '../node_modules/next/link'
 import utilStyles from '../styles/utils.module.css'
-import Link from 'next/link'
 
 
 export default function Home({ allPostsData }) {

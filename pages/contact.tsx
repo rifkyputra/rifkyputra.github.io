@@ -4,7 +4,7 @@ import utilStyles from '../styles/utils.module.css';
 
 function Contact() {
     return (
-        <Layout home>
+        <Layout home={false}>
             <a href="https://www.instagram.com/pirkyruptra/"> Instagram </a>
             <div className={`${utilStyles.padding10px}`}></div>
 
