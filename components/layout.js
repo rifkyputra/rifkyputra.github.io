@@ -4,8 +4,9 @@ import styles from './layout.module.css'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 
-const name = '[Your Name]'
-export const siteTitle = 'Next.js Sample Website'
+const name = 'Rifky Adni Putra'
+export const siteTitle = 'Software Developer'
+export const siteDescription = "My name is Rifky Adni Putra. I'm a Software Engineer, specialized in Flutter, Unity, DotNet and Unreal Engine. You can find more about me in this page";
 
 export default function Layout({ children, home }) {
   return (
@@ -14,7 +15,7 @@ export default function Layout({ children, home }) {
         <link rel="icon" href="/favicon.ico" />
         <meta
           name="description"
-          content="Learn how to build a personal website using Next.js"
+          content="My name is Rifky Adni Putra. I'm a Software Engineer, specialized in Flutter, Unity, DotNet and Unreal Engine."
         />
         <meta
           property="og:image"

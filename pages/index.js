@@ -1,9 +1,7 @@
 import Head from 'next/head'
-import Layout, { siteTitle } from '../components/layout'
+import Layout, { siteDescription, siteTitle } from '../components/layout'
 import utilStyles from '../styles/utils.module.css'
-import { getSortedPostsData } from '../lib/posts'
 import Link from 'next/link'
-import Date from '../components/date'
 
 export default function Home({ allPostsData }) {
   return (
@@ -12,37 +10,30 @@ export default function Home({ allPostsData }) {
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>[Your Self Introduction]</p>
-        <p>
-          (This is a sample website - you’ll be building a site like this in{' '}
-          <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
-        </p>
+        <p>{siteDescription}</p>
       </section>
-      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>Blog</h2>
-        <ul className={utilStyles.list}>
-          {allPostsData.map(({ id, date, title }) => (
-            <li className={utilStyles.listItem} key={id}>
-              <Link href={`/posts/${id}`}>
-                <a>{title}</a>
-              </Link>
-              <br />
-              <small className={utilStyles.lightText}>
-                <Date dateString={date} />
-              </small>
-            </li>
-          ))}
-        </ul>
+      <section className={`${utilStyles.flexContainer}`}>
+        <Link href={`/experience`}>
+          <h2 className={` ${utilStyles.flexItem}`}><a>01. Experience</a></h2>
+        </Link>
+        <span className={`${utilStyles.dividerSpan} ${utilStyles.flexItem}`}>//</span>
+        <Link href={`/portfolio`}>
+          <a><h2 className={` ${utilStyles.flexItem}`}>02. Portfolio</h2></a>
+        </Link>
+        <span className={`${utilStyles.dividerSpan} ${utilStyles.flexItem}`}>//</span>
+        <Link href={`/blog`}>
+          <a><h2 className={`${utilStyles.flexItem}`}>03. Blog</h2></a>
+        </Link>
+        <span className={`${utilStyles.dividerSpan} ${utilStyles.flexItem}`}>//</span>
+        <Link href={`/contact`}>
+          <a><h2 className={`${utilStyles.flexItem}`}>04. Contact</h2></a>
+        </Link>
+
+
       </section>
+      
     </Layout>
   )
 }
 
-export async function getStaticProps() {
-  const allPostsData = getSortedPostsData()
-  return {
-    props: {
-      allPostsData
-    }
-  }
-}
+
