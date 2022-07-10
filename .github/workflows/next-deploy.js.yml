@@ -27,12 +27,9 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - run: npm ci
-    - run: npm run build --if-present
+    - run: npm run buildexport
       env:
         NEXT_PUBLIC_BASE_PATH: /personal
-    - run: npm run export
-      env:
-          NEXT_PUBLIC_BASE_PATH: /personal
     - run: touch /out/.nojekyll
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@v4
