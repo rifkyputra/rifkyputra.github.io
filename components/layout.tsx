@@ -8,7 +8,7 @@ import Image from '../node_modules/next/image';
 
 const name = 'Rifky Adni Putra'
 export const siteTitle = 'Software Developer'
-export const siteDescription = "My name is Rifky Adni Putra. I'm a Software Engineer, specialized in Flutter, Unity, DotNet and Unreal Engine. You can find more about me in this page";
+export const siteDescription = "Hi, My name is Rifky Adni Putra. I'm a Software Engineer. Using Dart (Flutter), TypeScript, and Rust.";
 const prefix = process.env.NEXT_PUBLIC_BASE_PATH || '';
 
 interface LayoutParam {
@@ -16,14 +16,14 @@ interface LayoutParam {
   home: boolean,
 }
 
-export default function Layout(param : LayoutParam) {
+export default function Layout(param: LayoutParam) {
   return (
     <div className={styles.container}>
       <Head>
-        <link rel="icon" href={prefix+`/favicon.ico`} />
+        <link rel="icon" href={prefix + `/favicon.ico`} />
         <meta
           name="description"
-          content="My name is Rifky Adni Putra. I'm a Software Engineer, specialized in Flutter, Unity, DotNet and Unreal Engine."
+          content="My name is Rifky Adni Putra. I'm a Software Engineer. Using Dart (Flutter), TypeScript, and Rust."
         />
         <meta
           property="og:image"
@@ -39,7 +39,7 @@ export default function Layout(param : LayoutParam) {
           <>
             <Image
               priority
-              src={prefix +`/images/profile.jpg`}
+              src={prefix + `/images/profile.jpg`}
               className={utilStyles.borderCircle}
               height={144}
               width={144}
@@ -53,7 +53,7 @@ export default function Layout(param : LayoutParam) {
               <a>
                 <Image
                   priority
-                  src={prefix +`/images/profile.jpg`}
+                  src={prefix + `/images/profile.jpg`}
                   className={utilStyles.borderCircle}
                   height={108}
                   width={108}

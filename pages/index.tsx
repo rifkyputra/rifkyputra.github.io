@@ -1,5 +1,5 @@
 import Layout, { siteDescription, siteTitle } from '../components/layout'
-import Head  from '../node_modules/next/head'
+import Head from '../node_modules/next/head'
 import Link from '../node_modules/next/link'
 import utilStyles from '../styles/utils.module.css'
 
@@ -15,7 +15,7 @@ export default function Home({ allPostsData }) {
       </section>
       <section className={`${utilStyles.flexContainer}`}>
         <Link href={`/experience`}>
-        <a><h2 className={` ${utilStyles.flexItem}`}>01. Experience</h2></a>
+          <a><h2 className={` ${utilStyles.flexItem}`}>01. Experience</h2></a>
         </Link>
         <div className={`${utilStyles.dividerBtm}`}>&nbsp;</div>
         <span className={`${utilStyles.dividerSpan} `}>//</span>
@@ -37,7 +37,7 @@ export default function Home({ allPostsData }) {
 
 
       </section>
-      
+
     </Layout>
   )
 }

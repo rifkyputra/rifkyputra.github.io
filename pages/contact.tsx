@@ -10,12 +10,15 @@ function Contact() {
 
             <a href="https://twitter.com/rif_ptra"> Twitter </a>
             <div className={`${utilStyles.padding10px}`}></div>
-        
-            <a href="https://www.linkedin.com/in/rptra/"> LinkedIn </a>
 
+            <a href="https://www.linkedin.com/in/rptra/"> LinkedIn </a>
             <div className={`${utilStyles.padding10px}`}></div>
 
-            <a href="/">Email</a>
+            <a href="https://github.com/rifkyputra"> Github </a>
+            <div className={`${utilStyles.padding10px}`}></div>
+
+            <a href="https://gitlab.com/rifkyputra"> Github </a>
+            <div className={`${utilStyles.padding10px}`}></div>
 
         </Layout>
     )
