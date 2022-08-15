@@ -17,7 +17,7 @@ function Contact() {
             <a href="https://github.com/rifkyputra"> Github </a>
             <div className={`${utilStyles.padding10px}`}></div>
 
-            <a href="https://gitlab.com/rifkyputra"> Github </a>
+            <a href="https://gitlab.com/rifkyputra"> Gitlab </a>
             <div className={`${utilStyles.padding10px}`}></div>
 
         </Layout>
