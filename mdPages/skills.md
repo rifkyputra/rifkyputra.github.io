@@ -1,10 +1,10 @@
 ---
-title: "My Skills"
-date: "2022-07-10"
+title: "Skills"
+date: "2022-10-26"
 ---
 My Main Technical skill is Mobile Development. Other Technical Skills are web, database, scripting, and cloud (basic).
 
-## Flutter
+### Flutter
 
 - Experience develop Mobile app, Web App, and Desktop App
 - State Management Using bloc, provider, or riverpod
@@ -25,17 +25,13 @@ My Main Technical skill is Mobile Development. Other Technical Skills are web, d
 - Logging using Sentry and Crashlytic
 - Flutter Animations, Rive and Lottie
 
-## Android Native
-
-- Modern Android Development
-
-## React
+### React
 
 - Using Next JS as static or SSR website
 - Using Tailwind, Module CSS, or SCSS
 - Typescript based
 
-## Web
+### Web
 
 - Understands concept of CSS, CSS Modules, CSS Variables, CSS preprocessor, Grid, and Flexbox.
 - CSS Framework such as Tailwind and Bootstrap.
@@ -45,35 +41,39 @@ My Main Technical skill is Mobile Development. Other Technical Skills are web, d
 - Knowledge of SEO
 - Wordpress
 
-## SQL and NoSQL Databases
+### SQL and NoSQL Databases
 
 - Using sqlite, hive, shared pref, isar,  web storage as a local storage
 - Using faunadb, mongodb, mysql, postgre as server database.
 - Firebase Firestore
 
-## Cloud
+### Cloud
 
 - Deploy server using AWS EC2 and Google Cloud Compute
 - Basic knowledge of Docker
 - Experience in AWS S3
 - Make My own VPN in EC2
 
-## Linux
+### Linux
 
 - Experience in Debian Based System
 - Experience in Bash Script
 - Basic Knowledge of Alpine Linux
 
-## Rust
+### Rust
 
 - Build a REST API using Actix
 - Able to use Serde, diesel, clap and other packages.
 
-## Other
+### Other
 
 - Understand WebAssembly Concept
 
-# Soft Skills
+### Android Native
+
+- Modern Android Development
+
+## Soft Skills
 
 - Able to work under pressure
 - Able to work supervised, or unsupervised.

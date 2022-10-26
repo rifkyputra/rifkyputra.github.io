@@ -1,13 +1,19 @@
 import Layout from "../components/layout";
 
-function Experience() {
+import { getPostDataFromPath } from '../lib/posts'
+import Head from "../node_modules/next/head";
+
+import Date from '../components/date'
+import utilStyles from '../styles/utils.module.css'
+
+export default function Skills({ postData }) {
     return (
-        <Layout home={false}>
-            <h3>2018 - 2020 : PT Medsular</h3>
-            <h3>2020 : PT Enigma Cipta Humanika</h3>
-            <h3>2020 - 2023 : Sinarmas Mining (PT Golden Energy Mines)</h3>
-        </Layout>
+        <>
+            <article>
+                <h2 className={utilStyles.headingXl}>{postData.title}</h2>
+                <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+            </article>
+        </>
     )
 }
 
-export default Experience;

@@ -94,6 +94,11 @@
   height: 0;
 }
 
+.wrapMargin {
+  margin-top: 45px;
+  margin-bottom: 75px;
+}
+
 .dividerBtm {
   border-bottom: 1px solid black;
   width: 2rem;
@@ -106,6 +111,7 @@
     display: flex;
     align-items: center;
     flex-direction: row;
+    justify-content: center;
   }
 
 
