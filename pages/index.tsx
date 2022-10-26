@@ -25,26 +25,26 @@ export default function Home({ skills, exp, proj, edu }) {
           <a><h2 className={` ${utilStyles.flexMenuItem}`}>Github</h2></a>
         </Link>
         <div className={`${utilStyles.dividerBtm}`}>&nbsp;</div>
-        <span className={`${utilStyles.dividerSpan} `}>\/\/</span>
+        <span className={`${utilStyles.dividerSpan} `}>||</span>
         <Link href={`https://gitlab.com/rifkyputra`}>
           <a><h2 className={` ${utilStyles.flexMenuItem}`}>Gitlab</h2></a>
         </Link>
         <div className={`${utilStyles.dividerBtm}`}>&nbsp;</div>
 
-        <span className={`${utilStyles.dividerSpan} `}>\/\/</span>
+        <span className={`${utilStyles.dividerSpan} `}>||</span>
         <Link href={`https://www.linkedin.com/in/rptra/`}>
           <a><h2 className={`${utilStyles.flexMenuItem}`}>LinkedIn</h2></a>
         </Link>
         <div className={`${utilStyles.dividerBtm}`}>&nbsp;</div>
 
 
-        <span className={`${utilStyles.dividerSpan} `}>/\\/</span>
+        <span className={`${utilStyles.dividerSpan} `}>||</span>
         <Link href={`/blog`}>
           <a><h2 className={`${utilStyles.flexMenuItem}`}>Blog</h2></a>
         </Link>
         <div className={`${utilStyles.dividerBtm}`}>&nbsp;</div>
 
-        <span className={`${utilStyles.dividerSpan} `}>\/\/</span>
+        <span className={`${utilStyles.dividerSpan} `}>||</span>
         <Link href={`https://twitter.com/rif_ptra`}>
           <a><h2 className={`${utilStyles.flexMenuItem}`}>Twitter</h2></a>
         </Link>
