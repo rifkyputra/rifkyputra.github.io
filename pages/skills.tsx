@@ -8,7 +8,7 @@ import utilStyles from '../styles/utils.module.css'
 
 export default function Skills({ postData }) {
     return (
-        <Layout>
+        <Layout home>
             <Head>
                 <title>{postData.title}</title>
             </Head>
@@ -24,13 +24,6 @@ export default function Skills({ postData }) {
     )
 }
 
-// export async function getStaticPaths() {
-//     const paths = getAllPostIds()
-//     return {
-//         paths,
-//         fallback: false
-//     }
-// }
 
 export async function getStaticProps({ params }) {
     const postData = await getPostDataFromPath('mdPages/skills.md')
