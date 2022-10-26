@@ -2,6 +2,8 @@ import Layout, { siteDescription, siteTitle } from '../components/layout'
 import Head from '../node_modules/next/head'
 import Link from '../node_modules/next/link'
 import utilStyles from '../styles/utils.module.css'
+import styles from './layout.module.css'
+
 
 
 export default function Home({ allPostsData }) {
@@ -25,14 +27,21 @@ export default function Home({ allPostsData }) {
         <div className={`${utilStyles.dividerBtm}`}>&nbsp;</div>
 
         <span className={`${utilStyles.dividerSpan} `}>//</span>
+        <Link href={`/skills`}>
+          <a><h2 className={`${utilStyles.flexItem}`}>03. Skills</h2></a>
+        </Link>
+        <div className={`${utilStyles.dividerBtm}`}>&nbsp;</div>
+
+
+        <span className={`${utilStyles.dividerSpan} `}>//</span>
         <Link href={`/blog`}>
-          <a><h2 className={`${utilStyles.flexItem}`}>03. Blog</h2></a>
+          <a><h2 className={`${utilStyles.flexItem}`}>04. Blog</h2></a>
         </Link>
         <div className={`${utilStyles.dividerBtm}`}>&nbsp;</div>
 
         <span className={`${utilStyles.dividerSpan} `}>//</span>
         <Link href={`/contact`}>
-          <a><h2 className={`${utilStyles.flexItem}`}>04. Contact</h2></a>
+          <a><h2 className={`${utilStyles.flexItem}`}>05. Contact</h2></a>
         </Link>
 
 

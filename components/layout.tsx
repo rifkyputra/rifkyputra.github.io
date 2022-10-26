@@ -18,7 +18,7 @@ interface LayoutParam {
 
 export default function Layout(param: LayoutParam) {
   return (
-    <div className={styles.container}>
+    <div className={styles.containerHome}>
       <Head>
         <link rel="icon" href={prefix + `/favicon.ico`} />
         <meta

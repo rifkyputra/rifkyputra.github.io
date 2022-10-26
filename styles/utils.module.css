@@ -23,6 +23,13 @@
 .headingMd {
   font-size: 1.2rem;
   line-height: 1.5;
+  text-align: center;
+}
+
+.headingMdLeft {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  text-align: left;
 }
 
 .borderCircle {
@@ -66,10 +73,15 @@
 .flexItem {
   flex-grow: 1;
   height: 100px;
-  
+
 }
 
-.item + .item {
+.flexMenuItem {
+  flex-grow: 1;
+
+}
+
+.item+.item {
   margin-left: 2%;
 }
 
@@ -89,7 +101,7 @@
   display: inline-block;
 }
 
-@media screen and (min-width:650px){
+@media screen and (min-width:926px) {
   .flexContainer {
     display: flex;
     align-items: center;
@@ -111,5 +123,5 @@
 
 
 
-  
+
 }
