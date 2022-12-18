@@ -20,6 +20,18 @@ function Blog({ allPostsData }) {
     <section className={`${utilStyles.headingMdLeft} ${utilStyles.padding1px}`}>
       {/* <h2 className={utilStyles.headingLg}>Blog</h2> */}
       <div className={` ${utilStyles.padding10px}`}>
+        
+        <ul className={utilStyles.list}>
+            <li className={utilStyles.listItem}>
+              <Link href="https://listed.to/@rifkyputra" > 
+                <a>Listed.to</a>
+              </Link>
+              <br />
+            </li>
+        </ul>
+      </div>
+      <div className={` ${utilStyles.padding10px}`}>
+        
         <ul className={utilStyles.list}>
           {allPostsData.map(({ id, date, title }) => (
             <li className={utilStyles.listItem} key={id}>
