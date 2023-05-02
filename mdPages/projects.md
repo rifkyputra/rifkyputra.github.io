@@ -19,6 +19,10 @@ date: "2022-10-26"
 - App for Customer side
 - e-commerce feature
 
+### JEC
+
+- Mobile Apps For JEC
+
 ### Wordpress Websites
 
 - Travel Agency Website

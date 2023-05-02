@@ -4,7 +4,7 @@ date: "2022-10-26"
 ---
 
 
-### Sinarmas Mining (PT Golden Energy Mines)
+### Sinarmas Mining (PT Berau Coal Energy)
 
 #### 2020 - Present
 
